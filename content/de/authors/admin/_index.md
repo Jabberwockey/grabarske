@@ -56,9 +56,9 @@ education:
     date_end: 2011-09-30
     summary: |
       Diplomarbeit über die Anforderungen an kooptive soziale Netzwerke. Betreuer Professor Dominic Heutelbeck.
-	  
-	  Schwerpunkte waren allerdings Kurse zu Künstlicher Intelligenz.
-	  
+
+      Schwerpunkte waren allerdings Kurse zu Künstlicher Intelligenz.
+
     button:
       text: 'Diplomarbeit lesen'
       url: 'https://example.com'
