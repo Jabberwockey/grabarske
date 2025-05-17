@@ -1,8 +1,7 @@
 +++
 title = "Große Jungs weinen nicht"
 author = ["Jens Grabarske"]
-date = 2025-05-17T21:11:00+02:00
-publishDate = 2013-02-23
+date = 2013-02-23T00:00:00+01:00
 draft = false
 +++
 
