@@ -215,57 +215,11 @@ languages:
 
 ## Willkommen!
 
-> Die großen Leute haben eine Vorliebe für Zahlen. Wenn ihr ihnen von einem
-> neuen Freund erzählt, befragen sie euch nie über das Wesentliche. Sie fragen
-> euch nie: Wie ist der Klang seiner Stimme? Welche Spiele liebt er am meisten?
-> Sammelt er Schmetterlinge?
->
-> _aus "Der kleine Prinz" von Antoine de Saint-Exupéry_
+Informatik ist seit meiner Kindheit meine große Leidenschaft. Ich
+arbeite nicht nur daher seit 2000 als Informatiker und
+Softwareentwickler, ich gebe diese Erfahrung auch seit 2007 als
+Trainer weiter.
 
-Nun, Schmetterlinge sammle ich nicht, den Klang meiner Stimme können Sie in
-den Videos hören, die ich auf dieser Seite verlinkt habe und am liebsten
-spiele ich 
-
-- Liverollenspiele
-- Computerspiele mit Rätseln
-- Schach
-- Go
-
-Außerhalb dieser Spiele bin ich ein Informatiker, ein Redner, ein
-IT-Trainer, ein Geschichtenerzähler, ein Magier.
-
-Der Reihe nach.
-
-### Informatik
-
-Meine erste Liebe ist und bleibt die Informatik. Mit 8 Jahren fing ich
-an, einfache Programme in BASIC zu schreiben. Und sehr schnell war für
-mich klar, dass ich Informatik studieren möchte, verzögert immer nur
-durch praktische Erfahrungen in Unternehmen.
-
-Seit 2016 arbeite ich als Softwarearchitekt bei ThyssenKrupp Steel
-Europe in Duisburg.
-
-### Redner und Trainer
-
-Für eine lange Zeit lang war ich Mitglied bei den Toastmasters, einem
-internationalen Rhetorikklub. Dies brachte mir auch Erfolge bei Poetry
-Slams ein.
-
-Seit 2007 arbeite ich als Dozent, hauptsächlich für die Agentur LP-IT
-in Bochum, mit der zusammen ich auf viele erfolgreiche Projekte
-zurückblicke.
-
-### Schriftsteller
-
-Zunehmend veröffentliche ich auch Kurzgeschichten, die ich in
-verschiedenen Anthologien platzieren konnte. Eine Auswahl meiner Werke
-finden Sie unter dem Punkt "Geschichten"
-
-### Magie
-
-Seit neuestem bin ich auch als Zauberkünstler tätig und strebe die
-Mitgliedschaft im Magischen Zirkel von Deutschland e.V. an.
-
-
-
+Seit ein paar Jahren gesellen sich jedoch drei weitere Leidenschaften
+dazu: Schriftstellerei, Geschichtenerzählerei und Zauberkunst. Auf
+diesen Seiten stelle ich Ihnen meine Arbeiten vor.
