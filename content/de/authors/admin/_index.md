@@ -115,18 +115,18 @@ skills:
         description: ''
         percent: 80
         icon: python
-	  - name: Lisp
-	    description: ''
-	    percent: 80
+      - name: Lisp
+        description: ''
+        percent: 80
         icon: code-bracket
-	  - name: JavaScript
-	    description: ''
-		percent: 70
-		icon: javascript
-	  - name: Go
-	    description: ''
-		percent: 50
-		icon: code-bracket
+      - name: JavaScript
+        description: ''
+        percent: 70
+        icon: javascript
+      - name: Go
+        description: ''
+        percent: 50
+        icon: code-bracket
       - name: SQL
         description: ''
         percent: 70
@@ -155,15 +155,15 @@ skills:
         description: ''
         percent: 80
         icon: camera
-	  - name: Liverollenspiel
-	    description: ''
-		percent: 90
-		icon: dragon
-	  - name: Zauberkunst
-	    description: ''
-		percent: 60
-		icon: magic
-		
+      - name: Liverollenspiel
+        description: ''
+        percent: 90
+        icon: dragon
+      - name: Zauberkunst
+        description: ''
+        percent: 60
+        icon: magic
+  
 
 languages:
   - name: Deutsch
