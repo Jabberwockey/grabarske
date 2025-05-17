@@ -6,6 +6,8 @@ publishDate = 2013-02-23
 draft = false
 +++
 
+Als der Vater nach einem Streit abhaut, bricht Tobis Welt zusammen. Und zwar mehr, als der Junge es verstehen kann.
+
 _Das Bild, "Cam by the mysterious concrete wall", von ClickFlashPhotos / Nicki Varkevisser, wurde unter der CC BY 2.0 lizensiert_
 
 _Dies ist die deutsche Übersetzung der Geschichte "Big Boys Don't Cry", mit der ich 2013 bei dem "Zombies, Run" Fan-Wettbewerb in der Kategorie "Writing (Prose)" den
