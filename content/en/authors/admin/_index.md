@@ -67,7 +67,7 @@ education:
     date_start: 1997-10-01
     date_end: 2007-09-30
     summary: |
-	  Mainly courses on AI, minor philosophy, there mainly argumentation theory and Plato.
+      Mainly courses on AI, minor philosophy, there mainly argumentation theory and Plato.
 
 work:
   - position: Software architect
@@ -88,7 +88,7 @@ work:
     date_start: 2007-07-01
     date_end: ''
     summary: |
-	  Responsibilities include:
+      Responsibilities include:
       - Planning and execution of trainings on programming topics, with a focus on Java, Python and Go and their respective ecosystems.
   - position: Freelance developer
     company_name: Jens Grabarske EDV-Dienstleistungen
@@ -97,8 +97,8 @@ work:
     date_start: 2014-04-01
     date_end: 2015-12-31
     summary: |
-	  Responsibilities included:
-	  - Various software projects
+   Responsibilities included:
+   - Various software projects
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -217,7 +217,7 @@ Computer science has been my biggest passion ever since my
 childhood. Since 2000 I not only work as an IT expert and software
 developer, I also pass on my experience and knowledge as a trainer
 since 2007.
-	
+
 Starting a couple of years ago, three other hobbies also took on a
 bigger role: writing, story-telling and magic.
 
