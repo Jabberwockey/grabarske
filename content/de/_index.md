@@ -26,7 +26,7 @@ sections:
           # Add your image background to `assets/media/`.
           filename: blois.jpg
           filters:
-            brightness: 1.0
+            brightness: 0.4
           size: cover
           position: center
           parallax: false
