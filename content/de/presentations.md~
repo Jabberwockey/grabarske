@@ -1,6 +1,6 @@
 ---
-title: 'Projekte'
-date: 2024-05-19
+title: 'Artikel'
+date: 2025-05-17
 type: landing
 
 design:
@@ -11,11 +11,11 @@ design:
 sections:
   - block: collection
     content:
-      title: Ausgewählte Projekte
-      text: Hier ist eine Auswahl von meinen Projekten.
+      title: Artikel
+      text: Aufsätze über Informatik, Technik und andere Themen, die mich interessieren.
       filters:
         folders:
-          - project
+          - post
     design:
       view: article-grid
       fill_image: false

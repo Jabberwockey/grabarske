@@ -1,6 +1,6 @@
 ---
-title: 'Projekte'
-date: 2024-05-19
+title: 'Geschichten'
+date: 2025-05-17
 type: landing
 
 design:
@@ -11,11 +11,11 @@ design:
 sections:
   - block: collection
     content:
-      title: Ausgewählte Projekte
-      text: Hier ist eine Auswahl von meinen Projekten.
+      title: Geschichten
+      text: Kurzgeschichten in deutscher Sprache. Für englischsprachige Kurzgeschichten, wählen Sie die englische Sprachoption.
       filters:
         folders:
-          - project
+          - story
     design:
       view: article-grid
       fill_image: false

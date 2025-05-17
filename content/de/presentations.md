@@ -1,6 +1,6 @@
 ---
-title: 'Projekte'
-date: 2024-05-19
+title: 'Auftritte'
+date: 2025-05-17
 type: landing
 
 design:
@@ -11,11 +11,11 @@ design:
 sections:
   - block: collection
     content:
-      title: Ausgewählte Projekte
-      text: Hier ist eine Auswahl von meinen Projekten.
+      title: Auftritte
+      text: Videos und Ankündigungen für zukünftige Auftritte
       filters:
         folders:
-          - project
+          - presentation
     design:
       view: article-grid
       fill_image: false
