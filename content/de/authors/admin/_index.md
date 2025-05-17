@@ -118,7 +118,7 @@ skills:
 	  - name: Lisp
 	    description: ''
 	    percent: 80
-		icon: code-bracket
+        icon: code-bracket
 	  - name: JavaScript
 	    description: ''
 		percent: 70
