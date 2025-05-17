@@ -97,8 +97,8 @@ work:
     date_start: 2014-04-01
     date_end: 2015-12-31
     summary: |
-   Responsibilities included:
-   - Various software projects
+      Responsibilities included:
+      - Various software projects
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
