@@ -68,8 +68,8 @@ education:
     date_start: 1997-10-01
     date_end: 2007-09-30
     summary: |
-	  Vornehmlich Kurse zu Künstlicher Intelligenz, Nebenfach Philosophie, dabei
-	  insbesondere Argumentationstheorie und Plato
+      Vornehmlich Kurse zu Künstlicher Intelligenz, Nebenfach Philosophie, dabei
+      insbesondere Argumentationstheorie und Plato
 
 work:
   - position: Softwarearchitekt
