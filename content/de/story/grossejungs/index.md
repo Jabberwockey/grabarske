@@ -2,8 +2,8 @@
 title = "Große Jungs weinen nicht"
 author = ["Jens Grabarske"]
 date = 2025-05-17T21:11:00+02:00
+publishDate = 2013-02-23
 draft = false
-featured_image = "/img/grossejungs.jpg"
 +++
 
 _Das Bild, "Cam by the mysterious concrete wall", von ClickFlashPhotos / Nicki Varkevisser, wurde unter der CC BY 2.0 lizensiert_
@@ -13,6 +13,10 @@ ersten Platz gewann. Das Original findet ihr [<https://grabarske.de/en/story/big
 
 _Von dieser deutschen Fassung gibt es ein Hörspiel, das von Kevin Szesch, Mel Strunk, Gabor Rebner und mir eingesprochen wurde. Ihr könnt
 euch das hier anhören:_
+
+{{< soundcloud 1010659408 >}}
+
+{{< /soundcloud >}}
 
 Ich habe etwas schlimmes gemacht und jetzt ist nichts mehr in Ordnung. Und ich hab Angst und ich will nicht, dass es nicht in Ordnung ist, aber es ist alles meine Schuld. Und jetzt ist Papa weg und Mama ist wütend auf mich und Peter ist weg. Ich habe noch seine Actionfigur. Er gab sie mir, als ich 16 wurde. Er sagte, dass ich sie haben kann, weil wir Freunde sind.
 
