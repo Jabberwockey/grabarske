@@ -10,8 +10,8 @@ main:
   - name: Artikel
     url: blog/
     weight: 12
-  - name: Auftritte
-    url: presentations/
+  - name: Videos
+    url: videos/
     weight: 13
   - name: Geschichten
     url: stories/

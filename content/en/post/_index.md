@@ -1,4 +1,4 @@
 ---
-title: Geschichten
+title: Blog
 view: article-grid
 ---
