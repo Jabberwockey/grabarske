@@ -9,7 +9,7 @@ en:
   contentDir: content/en
   menu:
     main:
-      - name: About me
+      - name: About me / Imprint
         url: /
         weight: 10
       - name: Articles
