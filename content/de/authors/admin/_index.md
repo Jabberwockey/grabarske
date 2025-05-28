@@ -223,3 +223,13 @@ Trainer weiter.
 Seit ein paar Jahren gesellen sich jedoch drei weitere Leidenschaften
 dazu: Schriftstellerei, Geschichtenerzählerei und Zauberkunst. Auf
 diesen Seiten stelle ich Ihnen meine Arbeiten vor.
+
+## Anschrift
+
+Jens Grabarske  
+Carpstraße 10  
+47119 Duisburg  
+Deutschland  
+
+Telefon: +491735255835  
+Email: [jens@grabarske.de](mailto:jens@grabarske.de)

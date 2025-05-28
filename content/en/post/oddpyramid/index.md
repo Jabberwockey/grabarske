@@ -79,30 +79,18 @@ But for that we need some number theory.
 
 ## Proof {#proof}
 
-First we need a formula for the sum of all natural numbers up until and including a number _n_. That formula has been found by the German mathematician Gauß: <img src="/ltximg/20250514094549-ungerade_pyramide_1212d416fd0a0db76428eebd821c703166a0ca66.svg" alt="$\frac{n(n+1)}{2}$" class="org-svg" /> - let's prove that this is the case:
+First we need a formula for the sum of all natural numbers up until and including a number _n_. That formula has been found by the German mathematician Gauß: \\(\frac{n(n+1)}{2}\\) - let's prove that this is the case:
 
 
 ### Lemma Gauß {#lemma-gauß}
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="/ltximg/20250514094549-ungerade_pyramide_20be9209bafc945ab381cfdf183b06b8dabed36c.svg" alt="\begin{equation*}
+\begin{equation\*}
    S : \mathbb{N} \rightarrow \mathbb{N}
-\end{equation*}
-" class="org-svg" />
-</span>
-</div>
+\end{equation\*}
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="/ltximg/20250514094549-ungerade_pyramide_18000b0d034172146136d30dd67469d62f0bc065.svg" alt="\begin{equation*}
-   S(n) := \sum_{i=1}^n = 1 + \ldots + n =^? \frac{n \cdot (n + 1)}{2}
-\end{equation*}
-" class="org-svg" />
-</span>
-</div>
+\begin{equation\*}
+   S(n) := \sum\_{i=1}^n = 1 + \ldots + n =^? \frac{n \cdot (n + 1)}{2}
+\end{equation\*}
 
 
 #### Proof by induction {#proof-by-induction}
@@ -111,24 +99,18 @@ First we need a formula for the sum of all natural numbers up until and includin
 
 -  Anchor
 
-    For <img src="/ltximg/20250514094549-ungerade_pyramide_b3dc4affa499d8df0b6776bb2e15b739e850e15c.svg" alt="$n = 1$" class="org-svg" /> :
+    For \\(n = 1\\) :
 
-
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_50c4ec67d0f5d162e3623cdca49d4dedfd7d70be.svg" alt="\begin{equation*}
-    S(1) = \sum_{i=1}^1 = 1 = \frac{1 \cdot 2}{2} \square
-    \end{equation*}
-    " class="org-svg" />
-    </span>
-    </div>
+    \begin{equation\*}
+    S(1) = \sum\_{i=1}^1 = 1 = \frac{1 \cdot 2}{2} \square
+    \end{equation\*}
 
 <!--list-separator-->
 
 -  Assumption
 
     Let's assume, the property holds for all numbers up to
-    <img src="/ltximg/20250514094549-ungerade_pyramide_fc28bb8fbf8e50303005cd58a0e7d90b013f1c07.svg" alt="$n - 1$" class="org-svg" />.
+    \\(n - 1\\).
 
 <!--list-separator-->
 
@@ -136,20 +118,14 @@ First we need a formula for the sum of all natural numbers up until and includin
 
     Then:
 
-
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_1ee51dc5ba7df5fbbc83014fef1e0216439338a7.svg" alt="\begin{eqnarray*}
-    S(n) &amp;amp;=&amp;amp; n + S(n-1)\\
-         &amp;amp;=&amp;amp; n + \frac{(n - 1) \cdot ((n - 1) + 1)}{2}\\
-         &amp;amp;=&amp;amp; n + \frac{(n - 1) \cdot n}{2}\\
-         &amp;amp;=&amp;amp; \frac{2n + n^2 - n}{2}\\
-         &amp;amp;=&amp;amp; \frac{n^2 + n}{2}\\
-         &amp;amp;=&amp;amp; \frac{n \cdot (n + 1)}{2} \square\\
-    \end{eqnarray*}
-    " class="org-svg" />
-    </span>
-    </div>
+    \begin{eqnarray\*}
+    S(n) &=& n + S(n-1)\\\\
+         &=& n + \frac{(n - 1) \cdot ((n - 1) + 1)}{2}\\\\
+         &=& n + \frac{(n - 1) \cdot n}{2}\\\\
+         &=& \frac{2n + n^2 - n}{2}\\\\
+         &=& \frac{n^2 + n}{2}\\\\
+         &=& \frac{n \cdot (n + 1)}{2} \square\\\\
+    \end{eqnarray\*}
 
 
 ### Lemma Sum of the first _n_ odd numbers {#lemma-sum-of-the-first-n-odd-numbers}
@@ -176,41 +152,23 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
 
 -  To prove
 
-
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_007ce7ba7f810a0f7e0fd8887a69ebc6607c3a5d.svg" alt="    \begin{equation*}
+        \begin{equation\*}
     T : \mathbb{N} \rightarrow \mathbb{N}
-        \end{equation*}
-    " class="org-svg" />
-    </span>
-    </div>
+        \end{equation\*}
 
-
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_39262f43e5374a7aed1e576347ae29f762d97a13.svg" alt="\begin{equation*}
-    T(n) := \sum_{i=1}^n 2i - 1 = 1 + 3 + 5 + \ldots + 2n - 1 =^? n^2
-    \end{equation*}
-    " class="org-svg" />
-    </span>
-    </div>
+    \begin{equation\*}
+    T(n) := \sum\_{i=1}^n 2i - 1 = 1 + 3 + 5 + \ldots + 2n - 1 =^? n^2
+    \end{equation\*}
 
 <!--list-separator-->
 
 -  Anchor
 
-    For <img src="/ltximg/20250514094549-ungerade_pyramide_b3dc4affa499d8df0b6776bb2e15b739e850e15c.svg" alt="$n = 1$" class="org-svg" /> :
+    For \\(n = 1\\) :
 
-
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_af4b2e8b486d3d5da8b396232bba766d46f95923.svg" alt="\begin{equation*}
-    T(1) = \sum_{i=1}^1 2i - 1 = 2 - 1 = 1 = 1^2 \square
-    \end{equation*}
-    " class="org-svg" />
-    </span>
-    </div>
+    \begin{equation\*}
+    T(1) = \sum\_{i=1}^1 2i - 1 = 2 - 1 = 1 = 1^2 \square
+    \end{equation\*}
 
 <!--list-separator-->
 
@@ -222,20 +180,14 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
 
 -  Step
 
-
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_41c7473e8ea57e1bf36ae2f90cab5d9572ea341c.svg" alt="     \begin{eqnarray*}
-    T(n) &amp;amp;=&amp;amp; \sum_{i=1}^n 2i - 1 \\
-         &amp;amp;=&amp;amp; (2n - 1) + \sum_{i=1}^{n-1} 2i - 1 \\
-         &amp;amp;=&amp;amp; (2n - 1) + T(n-1)\\
-         &amp;amp;=&amp;amp; (2n - 1) + (n - 1)^2 \\
-         &amp;amp;=&amp;amp; n^2 - 2n + 1 + 2n - 1 \\
-         &amp;amp;=&amp;amp; n^2 \square
-         \end{eqnarray*}
-    " class="org-svg" />
-    </span>
-    </div>
+         \begin{eqnarray\*}
+    T(n) &=& \sum\_{i=1}^n 2i - 1 \\\\
+         &=& (2n - 1) + \sum\_{i=1}^{n-1} 2i - 1 \\\\
+         &=& (2n - 1) + T(n-1)\\\\
+         &=& (2n - 1) + (n - 1)^2 \\\\
+         &=& n^2 - 2n + 1 + 2n - 1 \\\\
+         &=& n^2 \square
+         \end{eqnarray\*}
 
 
 ## Proof of the solution {#proof-of-the-solution}
@@ -247,20 +199,14 @@ The number of odd numbers up until and including row _i_ is exactly the sum
 of all odd numbers up to the sum of all natural numbers up to i. For our
 problem that means:
 
-
-<div class="equation-container">
-<span class="equation">
-<img src="/ltximg/20250514094549-ungerade_pyramide_c0aea8cf0261b8916bc61ba7909f366fc6694d86.svg" alt="\begin{eqnarray*}
-P(i) &amp;amp;=&amp;amp; T(S(i)) - T(S(i-1)) \\
-     &amp;amp;=&amp;amp; S(i)^2 - S(i-1)^2 \\
-     &amp;amp;=&amp;amp; \frac{i^2 \cdot (i + 1)^2}{4} - \frac{(i - 1)^2 \cdot i^2}{4} \\
-     &amp;amp;=&amp;amp; \frac{i^2 \cdot (i^2 + 2i + 1) - (i^2 - 2i + 1) \cdot i^2}{4} \\
-     &amp;amp;=&amp;amp; \frac{i^4 + 2i^3 + i^2 - i^4 + 2i^3 - i^2}{4} \\
-     &amp;amp;=&amp;amp; \frac{4i^3}{4}\\
-     &amp;amp;=&amp;amp; i^3 \square
-\end{eqnarray*}
-" class="org-svg" />
-</span>
-</div>
+\begin{eqnarray\*}
+P(i) &=& T(S(i)) - T(S(i-1)) \\\\
+     &=& S(i)^2 - S(i-1)^2 \\\\
+     &=& \frac{i^2 \cdot (i + 1)^2}{4} - \frac{(i - 1)^2 \cdot i^2}{4} \\\\
+     &=& \frac{i^2 \cdot (i^2 + 2i + 1) - (i^2 - 2i + 1) \cdot i^2}{4} \\\\
+     &=& \frac{i^4 + 2i^3 + i^2 - i^4 + 2i^3 - i^2}{4} \\\\
+     &=& \frac{4i^3}{4}\\\\
+     &=& i^3 \square
+\end{eqnarray\*}
 
 And this proves our solution.
