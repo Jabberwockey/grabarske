@@ -195,14 +195,14 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
 -  Induktionsschritt
 
     {{< math >}}
-    \begin{eqnarray\*}
-    T(n) &=& \sum\_{i=1}^n 2i - 1 \\\\
-         &=& (2n - 1) + \sum\_{i=1}^{n-1} 2i - 1 \\\\
+    \begin{eqnarray*}
+    T(n) &=& \sum_{i=1}^n 2i - 1 \\\\
+         &=& (2n - 1) + \sum_{i=1}^{n-1} 2i - 1 \\\\
          &=& (2n - 1) + T(n-1)\\\\
          &=& (2n - 1) + (n - 1)^2 \\\\
          &=& n^2 - 2n + 1 + 2n - 1 \\\\
          &=& n^2 \square
-         \end{eqnarray\*}
+         \end{eqnarray*}
     {{< /math >}}
 
 
