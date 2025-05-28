@@ -168,9 +168,11 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
     T : \mathbb{N} \rightarrow \mathbb{N}
         \end{equation\*}
 
+    {{< math >}}
     \begin{equation\*}
     T(n) := \sum\_{i=1}^n 2i - 1 = 1 + 3 + 5 + \ldots + 2n - 1 =^? n^2
     \end{equation\*}
+    {{< /math >}}
 
 <!--list-separator-->
 
@@ -192,7 +194,8 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
 
 -  Induktionsschritt
 
-         \begin{eqnarray\*}
+    {{< math >}}
+    \begin{eqnarray\*}
     T(n) &=& \sum\_{i=1}^n 2i - 1 \\\\
          &=& (2n - 1) + \sum\_{i=1}^{n-1} 2i - 1 \\\\
          &=& (2n - 1) + T(n-1)\\\\
@@ -200,6 +203,7 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
          &=& n^2 - 2n + 1 + 2n - 1 \\\\
          &=& n^2 \square
          \end{eqnarray\*}
+    {{< /math >}}
 
 
 ### Beweis ursprünglicher Zusammenhang {#beweis-ursprünglicher-zusammenhang}
