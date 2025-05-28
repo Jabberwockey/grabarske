@@ -99,11 +99,18 @@ von Gauß entwickelt wurde: \\(\frac{n(n+1)}{2}\\) - hier der Beweis des Zusamme
 
 ### Lemma Gauß {#lemma-gauß}
 
+$$
+
 \begin{equation}S : \mathbb{N} \rightarrow \mathbb{N}\end{equation}
 
-$   \begin{equation}
-      S(n) := &sum;<sub>i=1</sub>^n = 1 + \ldots + n =^? \frac{n \cdot (n + 1)}{2}
-   \end{equation} $
+\\[
+\\]
+
+\begin{equation}
+   S(n) := \sum\_{i=1}^n = 1 + \ldots + n =^? \frac{n \cdot (n + 1)}{2}
+\end{equation}
+
+$$
 
 
 #### Beweis durch Induktion {#beweis-durch-induktion}
