@@ -65,6 +65,19 @@ def gen_line_str(i):
 return [["*Zeile*", "*Zahlen*", "*Ergebnis*"], None] + [[i,gen_line_str(i), solution(i)] for i in range(1, 11)]
 ```
 
+| **Zeile** | **Zahlen**                         | **Ergebnis** |
+|-----------|------------------------------------|--------------|
+| 1         | 1                                  | 1            |
+| 2         | 3 5                                | 8            |
+| 3         | 7 9 11                             | 27           |
+| 4         | 13 15 17 19                        | 64           |
+| 5         | 21 23 25 27 29                     | 125          |
+| 6         | 31 33 35 37 39 41                  | 216          |
+| 7         | 43 45 47 49 51 53 55               | 343          |
+| 8         | 57 59 61 63 65 67 69 71            | 512          |
+| 9         | 73 75 77 79 81 83 85 87 89         | 729          |
+| 10        | 91 93 95 97 99 101 103 105 107 109 | 1000         |
+
 Dieser Code enthält auch Methoden um die Tabelle selber zu generieren, etwas,
 was gar nicht gefordert ist - genau diese Fragestellung bringt die Kandidaten
 daher auch ins Schwitzen, bis man ihnen den freundlichen Hinweis gibt, sich doch
@@ -86,13 +99,13 @@ von Gauß entwickelt wurde: \\(\frac{n(n+1)}{2}\\) - hier der Beweis des Zusamme
 
 ### Lemma Gauß {#lemma-gauß}
 
-\begin{equation\*}
+\begin{equation}
    S : \mathbb{N} \rightarrow \mathbb{N}
-\end{equation\*}
+\end{equation}
 
-\begin{equation\*}
+\begin{equation}
    S(n) := \sum\_{i=1}^n = 1 + \ldots + n =^? \frac{n \cdot (n + 1)}{2}
-\end{equation\*}
+\end{equation}
 
 
 #### Beweis durch Induktion {#beweis-durch-induktion}
