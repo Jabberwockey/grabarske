@@ -11,7 +11,7 @@ Programmieraufgaben zu
 stellen, da sie höchstens ein recht verzerrtes Bild von den Programmierfähigkeiten
 des Kandidaten widerspiegeln.
 
-Daher mochte ich es eigentlich sehr, Aufgaben wie diese zu stellen, denn sie sagt
+Dabei mochte ich es eigentlich sehr, Aufgaben wie diese zu stellen, denn sie sagt
 mir, wie der Programmierer denkt, bevor er eine Aufgabe anfängt zu programmieren.
 Denn genau diese Fähigkeit entscheidet hier darüber, wie schnell man zu einer
 Lösung kommt.
@@ -99,13 +99,9 @@ von Gauß entwickelt wurde: \\(\frac{n(n+1)}{2}\\) - hier der Beweis des Zusamme
 
 ### Lemma Gauß {#lemma-gauß}
 
-$
-
-\begin{equation}
-   S : \mathbb{N} \rightarrow \mathbb{N}
-\end{equation}
-
-$
+\\(\begin{equation}
+       S : \mathbb{N} \rightarrow \mathbb{N}
+    \end{equation}\\)
 
 $   \begin{equation}
       S(n) := &sum;<sub>i=1</sub>^n = 1 + \ldots + n =^? \frac{n \cdot (n + 1)}{2}
