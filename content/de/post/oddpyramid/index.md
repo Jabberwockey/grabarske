@@ -99,7 +99,11 @@ von Gauß entwickelt wurde: \\(\frac{n(n+1)}{2}\\) - hier der Beweis des Zusamme
 
 ### Lemma Gauß {#lemma-gauß}
 
-Gegeben sei eine Funktion \\(S : \mathbb{N} \rightarrow \mathbb{N}\\) definiert als \\(S(n) := \sum\_{i=1}^n = 1 + \ldots n\\)
+Gegeben sei eine Funktion \\(S : \mathbb{N} \rightarrow \mathbb{N}\\) definiert als
+
+\\[
+    S(n) := \sum\_{i=1}^n = 1 + \ldots + n
+    \\]
 
 Zu zeigen: \\(S(n) = \frac{n \cdot (n + 1)}{2}\\)
 
@@ -112,9 +116,11 @@ Zu zeigen: \\(S(n) = \frac{n \cdot (n + 1)}{2}\\)
 
     Für \\(n = 1\\) gilt:
 
-    \begin{equation\*}
-    S(1) = \sum\_{i=1}^1 = 1 = \frac{1 \cdot 2}{2} \square
-    \end{equation\*}
+    \\[
+        S(1) = \sum\_{i=1}^1 = 1 = \frac{1 \cdot 2}{2}
+        \\]
+
+    was zu zeigen war.
 
 <!--list-separator-->
 
@@ -142,12 +148,12 @@ Es gibt den folgenden überraschenden Zusammenhang: die Summe
 der ersten \\(n\\) ungeraden Zahlen ist immer \\(n^2\\) - sprich, alle
 Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
 
-| **n** | **Zahlen** | **Summe** | **bzw.** |
-|-------|------------|-----------|----------|
-| 1     | 1          | 1         | 1^2      |
-| 2     | 1 3        | 4         | 2^2      |
-| 3     | 1 3 5      | 9         | 3^2      |
-| 4     | 1 3 5 7    | 16        | 4^2      |
+| **n** | **Zahlen** | **Summe** | **bzw.**  |
+|-------|------------|-----------|-----------|
+| 1     | 1          | 1         | \\(1^2\\) |
+| 2     | 1 3        | 4         | \\(2^2\\) |
+| 3     | 1 3 5      | 9         | \\(3^2\\) |
+| 4     | 1 3 5 7    | 16        | \\(4^2\\) |
 
 
 #### Beweis durch vollständige Induktion {#beweis-durch-vollständige-induktion}
@@ -172,8 +178,8 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
     Für \\(n = 1\\) gilt:
 
     \\[
-     T(1) = \sum\_{i=1}^1 2i - 1 = 2 - 1 = 1 = 1^2 \square
-    \\]
+     T(1) = \sum\_{i=1}^1 2i - 1 = 2 - 1 = 1 = 1^2
+     \\]
 
 <!--list-separator-->
 
