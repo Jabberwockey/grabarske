@@ -1,5 +1,8 @@
 window.MathJax = {
   tex: {
-    tags: "ams"
+      tags: "ams",
+      processEnvironments: true,
+      processRefs: true,
+      processEscapes: true
   }
 };
