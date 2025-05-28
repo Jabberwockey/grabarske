@@ -104,7 +104,7 @@ von Gauß entwickelt wurde: \\(\frac{n(n+1)}{2}\\) - hier der Beweis des Zusamme
     \\]
 
 \\[
-S(n) := \sum_{i=1}^n = 1 + \ldots + n =^? \frac{n \cdot (n + 1)}{2}
+S(n) := \sum\_{i=1}^n = 1 + ... + n =^? \frac{n \cdot (n + 1)}{2}
 \\]
 
 
@@ -133,14 +133,15 @@ S(n) := \sum_{i=1}^n = 1 + \ldots + n =^? \frac{n \cdot (n + 1)}{2}
 
     Dann gilt:
 
-    \begin{eqnarray\*}
-    S(n) &=& n + S(n-1)\\\\
-         &=& n + \frac{(n - 1) \cdot ((n - 1) + 1)}{2}\\\\
-         &=& n + \frac{(n - 1) \cdot n}{2}\\\\
-         &=& \frac{2n + n^2 - n}{2}\\\\
-         &=& \frac{n^2 + n}{2}\\\\
-         &=& \frac{n \cdot (n + 1)}{2} \square\\\\
-    \end{eqnarray\*}
+    \\[
+          S(n)\\\\
+               = n + S(n-1)\\\\
+               = n + \frac{(n - 1) \cdot ((n - 1) + 1)}{2}\\\\
+               = n + \frac{(n - 1) \cdot n}{2}\\\\
+               = \frac{2n + n^2 - n}{2}\\\\
+               = \frac{n^2 + n}{2}\\\\
+               = \frac{n \cdot (n + 1)}{2} \square\\\\
+    \\]
 
 
 ### Lemma Summe der ersten n ungeraden Zahlen {#lemma-summe-der-ersten-n-ungeraden-zahlen}
