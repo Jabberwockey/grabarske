@@ -34,12 +34,12 @@ kompliziert, bis man einmal für die ersten Zeilen es per Hand durchführt.
 
 Das ergibt dann die folgenden Ergebnisse:
 
-| **Zeile** | **Zahlen**  | **Summe** | **bzw.** |
-|-----------|-------------|-----------|----------|
-| 1         | 1           | 1         | 1^3      |
-| 2         | 3 5         | 8         | 2^3      |
-| 3         | 7 9 11      | 27        | 3^3      |
-| 4         | 13 15 17 19 | 64        | 4^3      |
+| **Zeile** | **Zahlen**  | **Summe** | **bzw.**  |
+|-----------|-------------|-----------|-----------|
+| 1         | 1           | \\(1\\)   | \\(1^3\\) |
+| 2         | 3 5         | \\(8\\)   | \\(2^3\\) |
+| 3         | 7 9 11      | \\(27\\)  | \\(3^3\\) |
+| 4         | 13 15 17 19 | \\(64\\)  | \\(4^3\\) |
 
 Für die Zeile _i_ ist die Lösung scheinbar i^3 - programmiertechnisch also sehr
 simpel. Eine Lösung in Python, die auch gleich eine Tabelle mit den ersten
@@ -93,31 +93,15 @@ Doch dafür zunächst ein Ausflug in die Zahlentheorie.
 ## Beweis {#beweis}
 
 Zunächst brauchen wir eine Formel, mit der die Summe aller natürlichen Zahlen
-bis einschließlich <img src="/ltximg/20250514094549-ungerade_pyramide_7541ce3483e0eb67041eb4d221b436efa894ccbf.svg" alt="$n$" class="org-svg" /> berechnet werden kann. Dafür gibt es eine Formel, die
-von Gauß entwickelt wurde: <img src="/ltximg/20250514094549-ungerade_pyramide_1212d416fd0a0db76428eebd821c703166a0ca66.svg" alt="$\frac{n(n+1)}{2}$" class="org-svg" /> - hier der Beweis des Zusammenhangs:
+bis einschließlich \\(n\\) berechnet werden kann. Dafür gibt es eine Formel, die
+von Gauß entwickelt wurde: \\(\frac{n(n+1)}{2}\\) - hier der Beweis des Zusammenhangs:
 
 
 ### Lemma Gauß {#lemma-gauß}
 
+Gegeben sei eine Funktion \\(S : \mathbb{N} \rightarrow \mathbb{N}\\) definiert als \\(S(n) := \sum\_{i=1}^n = 1 + \ldots n\\)
 
-<div class="equation-container">
-<span class="equation">
-<img src="/ltximg/20250514094549-ungerade_pyramide_515755090672bdf42a09e00727bd0e0404f3e41e.svg" alt="    \begin{equation*}
-   S : \mathbb{N} \rightarrow \mathbb{N}
-\end{equation*}
-" class="org-svg" />
-</span>
-</div>
-
-
-<div class="equation-container">
-<span class="equation">
-<img src="/ltximg/20250514094549-ungerade_pyramide_18000b0d034172146136d30dd67469d62f0bc065.svg" alt="\begin{equation*}
-   S(n) := \sum_{i=1}^n = 1 + \ldots + n =^? \frac{n \cdot (n + 1)}{2}
-\end{equation*}
-" class="org-svg" />
-</span>
-</div>
+Zu zeigen: \\(S(n) = \frac{n \cdot (n + 1)}{2}\\)
 
 
 #### Beweis durch Induktion {#beweis-durch-induktion}
@@ -126,24 +110,18 @@ von Gauß entwickelt wurde: <img src="/ltximg/20250514094549-ungerade_pyramide_1
 
 -  Induktionsanker
 
-    Für <img src="/ltximg/20250514094549-ungerade_pyramide_b3dc4affa499d8df0b6776bb2e15b739e850e15c.svg" alt="$n = 1$" class="org-svg" /> gilt:
+    Für \\(n = 1\\) gilt:
 
-
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_50c4ec67d0f5d162e3623cdca49d4dedfd7d70be.svg" alt="\begin{equation*}
-    S(1) = \sum_{i=1}^1 = 1 = \frac{1 \cdot 2}{2} \square
-    \end{equation*}
-    " class="org-svg" />
-    </span>
-    </div>
+    \begin{equation\*}
+    S(1) = \sum\_{i=1}^1 = 1 = \frac{1 \cdot 2}{2} \square
+    \end{equation\*}
 
 <!--list-separator-->
 
 -  Induktionsannahme
 
     Angenommen, der Zusammenhang gilt für alle Zahlen bis
-    <img src="/ltximg/20250514094549-ungerade_pyramide_fc28bb8fbf8e50303005cd58a0e7d90b013f1c07.svg" alt="$n - 1$" class="org-svg" />.
+    \\(n - 1\\).
 
 <!--list-separator-->
 
@@ -151,26 +129,17 @@ von Gauß entwickelt wurde: <img src="/ltximg/20250514094549-ungerade_pyramide_1
 
     Dann gilt:
 
+    \\[
+    S(n) = n + S(n - 1) = n + \frac{(n - 1) \cdot ((n - 1) + 1)}{2}
+    \\]
 
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_1ee51dc5ba7df5fbbc83014fef1e0216439338a7.svg" alt="\begin{eqnarray*}
-    S(n) &amp;amp;=&amp;amp; n + S(n-1)\\
-         &amp;amp;=&amp;amp; n + \frac{(n - 1) \cdot ((n - 1) + 1)}{2}\\
-         &amp;amp;=&amp;amp; n + \frac{(n - 1) \cdot n}{2}\\
-         &amp;amp;=&amp;amp; \frac{2n + n^2 - n}{2}\\
-         &amp;amp;=&amp;amp; \frac{n^2 + n}{2}\\
-         &amp;amp;=&amp;amp; \frac{n \cdot (n + 1)}{2} \square\\
-    \end{eqnarray*}
-    " class="org-svg" />
-    </span>
-    </div>
+    Durch Umformungen ergibt sich \\(S(n) = \frac{n \cdot (n - 1)}{2}\\) was zu beweisen war.
 
 
 ### Lemma Summe der ersten n ungeraden Zahlen {#lemma-summe-der-ersten-n-ungeraden-zahlen}
 
 Es gibt den folgenden überraschenden Zusammenhang: die Summe
-der ersten _n_ ungeraden Zahlen ist immer _n^2_ - sprich, alle
+der ersten \\(n\\) ungeraden Zahlen ist immer \\(n^2\\) - sprich, alle
 Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
 
 | **n** | **Zahlen** | **Summe** | **bzw.** |
@@ -187,66 +156,42 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
 
 -  Behauptung
 
+    Gegeben sei die Funktion \\(T : \mathbb{N} \rightarrow \mathbb{N}\\) definiert als
 
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_007ce7ba7f810a0f7e0fd8887a69ebc6607c3a5d.svg" alt="    \begin{equation*}
-    T : \mathbb{N} \rightarrow \mathbb{N}
-        \end{equation*}
-    " class="org-svg" />
-    </span>
-    </div>
+    \\[
+          T(n) := \sum\_{i=1}^n 2i - 1 = 1 + 3 + 5 + \ldots + 2n - 1
+          \\]
 
-
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_39262f43e5374a7aed1e576347ae29f762d97a13.svg" alt="\begin{equation*}
-    T(n) := \sum_{i=1}^n 2i - 1 = 1 + 3 + 5 + \ldots + 2n - 1 =^? n^2
-    \end{equation*}
-    " class="org-svg" />
-    </span>
-    </div>
+    also die Summe der ersten \\(n\\) ungeraden Zahlen. Zu zeigen ist,
+    dass \\(T(n) = n^2\\).
 
 <!--list-separator-->
 
 -  Anker
 
-    Für <img src="/ltximg/20250514094549-ungerade_pyramide_b3dc4affa499d8df0b6776bb2e15b739e850e15c.svg" alt="$n = 1$" class="org-svg" /> gilt:
+    Für \\(n = 1\\) gilt:
 
-
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_af4b2e8b486d3d5da8b396232bba766d46f95923.svg" alt="\begin{equation*}
-    T(1) = \sum_{i=1}^1 2i - 1 = 2 - 1 = 1 = 1^2 \square
-    \end{equation*}
-    " class="org-svg" />
-    </span>
-    </div>
+    \\[
+     T(1) = \sum\_{i=1}^1 2i - 1 = 2 - 1 = 1 = 1^2 \square
+    \\]
 
 <!--list-separator-->
 
 -  Induktionsannahme
 
-    Angenommen, es gilt für <img src="/ltximg/20250514094549-ungerade_pyramide_3aa9c4bdc3a859c81f47224aef21e0bbbe442560.svg" alt="$T(n-1)$" class="org-svg" />
+    Angenommen, es gilt für \\(T(n-1)\\)
 
 <!--list-separator-->
 
 -  Induktionsschritt
 
+    Da \\(T(n) = 2n - 1 + T(n-1)\\) gilt:
 
-    <div class="equation-container">
-    <span class="equation">
-    <img src="/ltximg/20250514094549-ungerade_pyramide_41c7473e8ea57e1bf36ae2f90cab5d9572ea341c.svg" alt="     \begin{eqnarray*}
-    T(n) &amp;amp;=&amp;amp; \sum_{i=1}^n 2i - 1 \\
-         &amp;amp;=&amp;amp; (2n - 1) + \sum_{i=1}^{n-1} 2i - 1 \\
-         &amp;amp;=&amp;amp; (2n - 1) + T(n-1)\\
-         &amp;amp;=&amp;amp; (2n - 1) + (n - 1)^2 \\
-         &amp;amp;=&amp;amp; n^2 - 2n + 1 + 2n - 1 \\
-         &amp;amp;=&amp;amp; n^2 \square
-         \end{eqnarray*}
-    " class="org-svg" />
-    </span>
-    </div>
+    \\[
+          T(n) = 2n - 1 + (n - 1)^2 = n^2 - 2n + 1 + 2n - 1 = n^2
+          \\]
+
+    was zu beweisen war.
 
 
 ### Beweis ursprünglicher Zusammenhang {#beweis-ursprünglicher-zusammenhang}
@@ -259,20 +204,16 @@ Die Anzahl der ungeraden Zahlen bis Zeile i ist genau die Summe
 aller natürlichen Zahlen bis i. Damit ergibt sich für unser
 Problem folgendes:
 
+\\[
+   P(i) = T(S(i)) - T(S(i - 1)) = S(i)^2 - S(i-1)^2
+   \\]
 
-<div class="equation-container">
-<span class="equation">
-<img src="/ltximg/20250514094549-ungerade_pyramide_c0aea8cf0261b8916bc61ba7909f366fc6694d86.svg" alt="\begin{eqnarray*}
-P(i) &amp;amp;=&amp;amp; T(S(i)) - T(S(i-1)) \\
-     &amp;amp;=&amp;amp; S(i)^2 - S(i-1)^2 \\
-     &amp;amp;=&amp;amp; \frac{i^2 \cdot (i + 1)^2}{4} - \frac{(i - 1)^2 \cdot i^2}{4} \\
-     &amp;amp;=&amp;amp; \frac{i^2 \cdot (i^2 + 2i + 1) - (i^2 - 2i + 1) \cdot i^2}{4} \\
-     &amp;amp;=&amp;amp; \frac{i^4 + 2i^3 + i^2 - i^4 + 2i^3 - i^2}{4} \\
-     &amp;amp;=&amp;amp; \frac{4i^3}{4}\\
-     &amp;amp;=&amp;amp; i^3 \square
-\end{eqnarray*}
-" class="org-svg" />
-</span>
-</div>
+Nach dem Einsetzen von \\(S\\) ergibt sich für \\(P\\):
+
+\\[
+   P(i) = \frac{i^2 \cdot (i + 1)^2}{4} - \frac{(i - 1)^2 \cdot i^2}{4}
+   \\]
+
+Nach dem Vereinfachen der binomischen Formen ergibt sich \\(P(i) = i^3\\).
 
 Und damit ist der Zusammenhang bewiesen.
