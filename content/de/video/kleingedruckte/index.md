@@ -15,7 +15,7 @@ _Dieser Text wurde auf dem Hammer Poetry Slam im Dezember 2013 vorgetragen. Hier
 
 Blauer Rauch stieg aus der kleinen Flasche auf und formte sich in die Gestalt eines orientalisch gekleideten Mannes, der mit vor der Brust verschränkten Armen denjenigen musterte, der den Behälter gerade noch rieb.
 
-“Oh, Efendim, ich danke dir, dass du mich aus der Flasche befreit hast und gewähre dir daher drei Wünsche!” spulte er etwas routiniert und gelangweilt ab.
+“Oh, Efendim, ich danke dir, dass du mich aus der Flasche befreit hast und gewähre dir daher drei Wünsche!” spulte er etwas routiniert und gelangweilt ab. 
 
 Der “Efendim” rückte seine Brille zurecht und legte den Kopf schief.
 
