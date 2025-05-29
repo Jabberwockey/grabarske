@@ -2,6 +2,7 @@
 title = "In the Valley of Missing Stories"
 author = ["Jens Grabarske"]
 date = 2014-01-18T00:00:00+01:00
+tags = ["poetryslam", "poem"]
 draft = false
 +++
 

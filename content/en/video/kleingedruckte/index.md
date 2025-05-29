@@ -2,6 +2,7 @@
 title = "The Smallprint"
 author = ["Jens Grabarske"]
 date = 2013-12-20T00:00:00+01:00
+tags = ["poetryslam", "humour"]
 draft = false
 +++
 

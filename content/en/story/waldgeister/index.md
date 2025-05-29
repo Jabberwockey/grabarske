@@ -2,6 +2,7 @@
 title = "The Forest Spirits"
 author = ["Jens Grabarske"]
 date = 2020-03-30T00:00:00+02:00
+tags = ["Story", "fantasy"]
 draft = false
 +++
 
