@@ -40,7 +40,7 @@ That would look like this:
 | 3       | 7 9 11      | 27      | 3^3       |
 | 4       | 13 15 17 19 | 64      | 4^3       |
 
-For the row with the number _i_ the solution appears to be _i^3_ - a program calculating
+For the row with the number \\(i\\) the solution appears to be \\(i^3\\) - a program calculating
 this is trivial. Here's a solution in Python that also returns a table with
 the first 10 lines:
 
@@ -79,18 +79,18 @@ But for that we need some number theory.
 
 ## Proof {#proof}
 
-First we need a formula for the sum of all natural numbers up until and including a number _n_. That formula has been found by the German mathematician Gauß: \\(\frac{n(n+1)}{2}\\) - let's prove that this is the case:
+First we need a formula for the sum of all natural numbers up until and including a number \\(n\\). That formula has been found by the German mathematician Gauß: \\(\frac{n(n+1)}{2}\\) - let's prove that this is the case:
 
 
 ### Lemma Gauß {#lemma-gauß}
 
-\begin{equation\*}
-   S : \mathbb{N} \rightarrow \mathbb{N}
-\end{equation\*}
+For the function \\(S : \mathbb{N} \rightarrow \mathbb{N}\\) defined as
 
-\begin{equation\*}
-   S(n) := \sum\_{i=1}^n = 1 + \ldots + n =^? \frac{n \cdot (n + 1)}{2}
-\end{equation\*}
+\\[
+    S(n) := \sum\_{i=1}^n = 1 + \ldots + n
+    \\]
+
+we want to prove: \\(S(n) = \frac{n \cdot (n + 1)}{2}\\)
 
 
 #### Proof by induction {#proof-by-induction}
@@ -100,10 +100,11 @@ First we need a formula for the sum of all natural numbers up until and includin
 -  Anchor
 
     For \\(n = 1\\) :
+    \\[
+        S(1) = \sum\_{i=1}^1 = 1 = \frac{1 \cdot 2}{2}
+        \\]
 
-    \begin{equation\*}
-    S(1) = \sum\_{i=1}^1 = 1 = \frac{1 \cdot 2}{2} \square
-    \end{equation\*}
+    which was to be shown.
 
 <!--list-separator-->
 
@@ -118,24 +119,37 @@ First we need a formula for the sum of all natural numbers up until and includin
 
     Then:
 
-    \begin{eqnarray\*}
-    S(n) &=& n + S(n-1)\\\\
-         &=& n + \frac{(n - 1) \cdot ((n - 1) + 1)}{2}\\\\
-         &=& n + \frac{(n - 1) \cdot n}{2}\\\\
-         &=& \frac{2n + n^2 - n}{2}\\\\
-         &=& \frac{n^2 + n}{2}\\\\
-         &=& \frac{n \cdot (n + 1)}{2} \square\\\\
-    \end{eqnarray\*}
+    \\[
+    S(n) = n + S(n - 1) = n + \frac{(n - 1) \cdot ((n - 1) + 1)}{2}
+    \\]
+
+    \\[
+    = \frac{2n + n \cdot (n - 1)}{2}
+    \\]
+
+    \\[
+    = \frac{2n + n^2 - n}{2}
+    \\]
+
+    \\[
+    = \frac{n + n^2}{2}
+    \\]
+
+    \\[
+    = \frac{n \cdot (n + 1)}{2}
+    \\]
+
+    which was to be proven.
 
 
 ### Lemma Sum of the first _n_ odd numbers {#lemma-sum-of-the-first-n-odd-numbers}
 
-Here's a surprising fact: the sum of the first _n_ odd numbers is always _n^2_ -
+Here's a surprising fact: the sum of the first \\(n\\) odd numbers is always \\(n^2\\) -
 meaning, all square numbers can be formed through the sums of the odd
 numbers:
 
 Es gibt den folgenden überraschenden Zusammenhang: die Summe
-der ersten _n_ ungeraden Zahlen ist immer n^2 - sprich, alle
+der ersten \\(n\\) ungeraden Zahlen ist immer \\(n^2\\) - sprich, alle
 Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
 
 | **n** | **Numbers** | **Sum** | **resp.** |
@@ -152,42 +166,57 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
 
 -  To prove
 
-        \begin{equation\*}
-    T : \mathbb{N} \rightarrow \mathbb{N}
-        \end{equation\*}
+    Given the function \\(T : \mathbb{N} \rightarrow \mathbb{N}\\) defined as:
 
-    \begin{equation\*}
-    T(n) := \sum\_{i=1}^n 2i - 1 = 1 + 3 + 5 + \ldots + 2n - 1 =^? n^2
-    \end{equation\*}
+    \\[
+          T(n) := \sum\_{i=1}^n 2i - 1 = 1 + 3 + 5 + \ldots + 2n - 1
+          \\]
+
+    meaning the sum of the first  \\(n\\) odd numbers. We want to show that \\(T(n) = n^2\\).
 
 <!--list-separator-->
 
 -  Anchor
 
-    For \\(n = 1\\) :
+    For \\(n = 1\\) we have:
 
-    \begin{equation\*}
-    T(1) = \sum\_{i=1}^1 2i - 1 = 2 - 1 = 1 = 1^2 \square
-    \end{equation\*}
+    \\[
+     T(1) = \sum\_{i=1}^1 (2i - 1) = 2 - 1 = 1
+     \\]
+
+    and therefore also \\(T(1) = 1^2\\).
 
 <!--list-separator-->
 
 -  Assumption
 
-    Let's assume, the property is true for all numbers up to _n - 1_.
+    Let's assume, the property is true for all numbers up to \\(n - 1\\).
 
 <!--list-separator-->
 
 -  Step
 
-         \begin{eqnarray\*}
-    T(n) &=& \sum\_{i=1}^n 2i - 1 \\\\
-         &=& (2n - 1) + \sum\_{i=1}^{n-1} 2i - 1 \\\\
-         &=& (2n - 1) + T(n-1)\\\\
-         &=& (2n - 1) + (n - 1)^2 \\\\
-         &=& n^2 - 2n + 1 + 2n - 1 \\\\
-         &=& n^2 \square
-         \end{eqnarray\*}
+    As
+
+    \\[
+          T(n) = 2n - 1 + T(n-1)
+          \\]
+
+    this holds:
+
+    \\[
+          T(n) = 2n - 1 + (n - 1)^2
+          \\]
+
+    \\[
+          = n^2 - 2n + 1 + 2n - 1
+          \\]
+
+    \\[
+          = n^2
+          \\]
+
+    which was to be proven.
 
 
 ## Proof of the solution {#proof-of-the-solution}
@@ -199,14 +228,26 @@ The number of odd numbers up until and including row _i_ is exactly the sum
 of all odd numbers up to the sum of all natural numbers up to i. For our
 problem that means:
 
-\begin{eqnarray\*}
-P(i) &=& T(S(i)) - T(S(i-1)) \\\\
-     &=& S(i)^2 - S(i-1)^2 \\\\
-     &=& \frac{i^2 \cdot (i + 1)^2}{4} - \frac{(i - 1)^2 \cdot i^2}{4} \\\\
-     &=& \frac{i^2 \cdot (i^2 + 2i + 1) - (i^2 - 2i + 1) \cdot i^2}{4} \\\\
-     &=& \frac{i^4 + 2i^3 + i^2 - i^4 + 2i^3 - i^2}{4} \\\\
-     &=& \frac{4i^3}{4}\\\\
-     &=& i^3 \square
-\end{eqnarray\*}
+\\[
+   P(i) = T(S(i)) - T(S(i - 1)) = S(i)^2 - S(i-1)^2
+   \\]
 
-And this proves our solution.
+After substituting \\(S\\) we have:
+
+\\[
+   P(i) = \frac{i² \cdot (i + 1)²}{4} - \frac{i² \cdot (i - 1)²}{4}
+   \\]
+
+\\[
+   = \frac{i² \cdot ((i² + 2i + 1) - (i² - 2i + 1))}{4}
+   \\]
+
+\\[
+   = \frac{i² \cdot 4 \cdot i}{4}
+   \\]
+
+\\[
+   = i³
+   \\]
+
+which proves that our solution is correct.
