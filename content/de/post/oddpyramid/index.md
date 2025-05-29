@@ -140,10 +140,22 @@ Zu zeigen: \\(S(n) = \frac{n \cdot (n + 1)}{2}\\)
     \\]
 
     \\[
-    = \frac{2n + n \cdot (n - 1)}{2} = \frac{2n + n^2 - n}{2} = \frac{n + n^2}{2} = \frac{n \cdot (n - 1)}{2}
+    = \frac{2n + n \cdot (n - 1)}{2}
     \\]
 
-    Durch Umformungen ergibt sich \\(S(n) = \frac{n \cdot (n - 1)}{2}\\) was zu beweisen war.
+    \\[
+    = \frac{2n + n^2 - n}{2}
+    \\]
+
+    \\[
+    = \frac{n + n^2}{2}
+    \\]
+
+    \\[
+    = \frac{n \cdot (n - 1)}{2}
+    \\]
+
+    Was zu beweisen war.
 
 
 ### Lemma Summe der ersten n ungeraden Zahlen {#lemma-summe-der-ersten-n-ungeraden-zahlen}
@@ -210,7 +222,11 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
           \\]
 
     \\[
-          = n^2 - 2n + 1 + 2n - 1 = n^2
+          = n^2 - 2n + 1 + 2n - 1
+          \\]
+
+    \\[
+          = n^2
           \\]
 
     was zu beweisen war.
