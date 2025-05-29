@@ -252,6 +252,16 @@ Nach dem Einsetzen von \\(S\\) ergibt sich für \\(P\\):
    P(i) = \frac{i² \cdot (i + 1)²}{4} - \frac{i² \cdot (i - 1)²}{4}
    \\]
 
-Nach dem Vereinfachen der binomischen Formen ergibt sich \\(P(i) = i^3\\).
+\\[
+   = \frac{i² \cdot ((i² + 2i + 1) - (i² - 2i + 1))}{4}
+   \\]
+
+\\[
+   = \frac{i² \cdot 4 \cdot i}{4}
+   \\]
+
+\\[
+   = i³
+   \\]
 
 Und damit ist der Zusammenhang bewiesen.
