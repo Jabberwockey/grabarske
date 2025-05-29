@@ -50,6 +50,19 @@ markup:
   _merge: deep
   highlight:
     lineNos: true
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
 security:
   _merge: deep
 sitemap:
