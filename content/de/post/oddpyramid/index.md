@@ -139,6 +139,10 @@ Zu zeigen: \\(S(n) = \frac{n \cdot (n + 1)}{2}\\)
     S(n) = n + S(n - 1) = n + \frac{(n - 1) \cdot ((n - 1) + 1)}{2}
     \\]
 
+    \\[
+    = \frac{2n + n \cdot (n - 1)}{2} = \frac{2n + n^2 - n}{2} = \frac{n + n^2}{2} = \frac{n \cdot (n - 1)}{2}
+    \\]
+
     Durch Umformungen ergibt sich \\(S(n) = \frac{n \cdot (n - 1)}{2}\\) was zu beweisen war.
 
 
@@ -181,6 +185,8 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
      T(1) = \sum\_{i=1}^1 (2i - 1) = 2 - 1 = 1
      \\]
 
+    und damit auch \\(T(1) = 1^2\\).
+
 <!--list-separator-->
 
 -  Induktionsannahme
@@ -191,10 +197,20 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
 
 -  Induktionsschritt
 
-    Da \\(T(n) = 2n - 1 + T(n-1)\\) gilt:
+    Da
 
     \\[
-          T(n) = 2n - 1 + (n - 1)^2 = n^2 - 2n + 1 + 2n - 1 = n^2
+          T(n) = 2n - 1 + T(n-1)
+          \\]
+
+    gilt:
+
+    \\[
+          T(n) = 2n - 1 + (n - 1)^2
+          \\]
+
+    \\[
+          = n^2 - 2n + 1 + 2n - 1 = n^2
           \\]
 
     was zu beweisen war.
