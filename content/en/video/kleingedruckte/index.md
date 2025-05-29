@@ -1,7 +1,8 @@
 +++
 title = "The Smallprint"
 author = ["Jens Grabarske"]
-draft = true
+date = 2013-12-20T00:00:00+01:00
+draft = false
 +++
 
 Contracts always have special clauses that confuse you. Even... special contracts...
