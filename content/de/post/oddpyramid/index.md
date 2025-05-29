@@ -24,7 +24,7 @@ In der ersten Zeile steht die erste ungerade Zahl, also die 1. In der zweiten di
 nächsten zwei ungeraden Zahlen, also die 3 und die 5. In der dritten die nächsten
 drei und so weiter.
 
-Schreibe ein Programm, das die Summe der Zahlen in Zeile _i_ berechnet.
+Schreibe ein Programm, das die Summe der Zahlen in Zeile \\(i\\) berechnet.
 
 
 ## Lösung {#lösung}
@@ -41,7 +41,7 @@ Das ergibt dann die folgenden Ergebnisse:
 | 3         | 7 9 11      | \\(27\\)  | \\(3^3\\) |
 | 4         | 13 15 17 19 | \\(64\\)  | \\(4^3\\) |
 
-Für die Zeile _i_ ist die Lösung scheinbar i^3 - programmiertechnisch also sehr
+Für die Zeile \\(i\\) ist die Lösung scheinbar \\(i^3\\) - programmiertechnisch also sehr
 simpel. Eine Lösung in Python, die auch gleich eine Tabelle mit den ersten
 10 Zeilen aufbaut, sähe in Python wie folgt aus:
 
@@ -178,7 +178,7 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
     Für \\(n = 1\\) gilt:
 
     \\[
-     T(1) = \sum\_{i=1}^1 2i - 1 = 2 - 1 = 1 = 1^2
+     T(1) = \sum\_{i=1}^1 2i - 1
      \\]
 
 <!--list-separator-->
