@@ -249,14 +249,8 @@ Problem folgendes:
 Nach dem Einsetzen von \\(S\\) ergibt sich für \\(P\\):
 
 \\[
-   P(i) = \frac{i^2 \cdot (i + 1)^2}{4}
+   P(i) = \frac{i^2 \cdot (i + 1)^2}{4} - \frac{i^2 \cdot (i - 1)^2}{4}
    \\]
-
-$$
-
--   \frac{(i - 1)^2 \cdot i^2}{4}
-
-$$
 
 Nach dem Vereinfachen der binomischen Formen ergibt sich \\(P(i) = i^3\\).
 
