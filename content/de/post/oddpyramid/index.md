@@ -178,7 +178,7 @@ Quadratzahlen lassen sich als Summe der ungeraden Zahlen abbilden:
     Für \\(n = 1\\) gilt:
 
     \\[
-     T(1) = \sum\_{i=1}^1 (2i - 1) = 2 - 1 = 1 = 1^2
+     T(1) = \sum\_{i=1}^1 (2i - 1) = 2 - 1 = 1
      \\]
 
 <!--list-separator-->
