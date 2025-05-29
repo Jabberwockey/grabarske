@@ -2,7 +2,7 @@
 title = "Der Galgenweg"
 author = ["Jens Grabarske"]
 date = 2020-04-02T00:00:00+02:00
-tags = ["Kurzgeschichte", "Drama"]
+tags = ["Drama", "Kurzgeschichte"]
 draft = false
 +++
 

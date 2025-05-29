@@ -2,6 +2,7 @@
 title = "Der Läufer"
 author = ["Jens Grabarske"]
 date = 2019-10-16T00:00:00+02:00
+tags = ["drama", "wettbewerb", "kurzgeschichte"]
 draft = false
 +++
 

@@ -15,7 +15,7 @@ sections:
       text: Aufzeichnungen von Auftritten und Erklärvideos
       filters:
         folders:
-          - presentation
+          - video
     design:
       view: article-grid
       fill_image: false

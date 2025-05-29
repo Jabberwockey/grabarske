@@ -12,10 +12,10 @@ sections:
   - block: collection
     content:
       title: Videos
-      text: Videos und Ankündigungen für zukünftige Auftritte
+      text: Videos of me or by me
       filters:
         folders:
-          - presentation
+          - video
     design:
       view: article-grid
       fill_image: false
